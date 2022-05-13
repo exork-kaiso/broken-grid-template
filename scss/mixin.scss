@@ -1,0 +1,14 @@
+// ブレイクポイント設定
+$breakpoints: (
+  'sm': 'screen and (min-width: 450px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1200px)',
+  'xl': 'screen and (min-width: 1920px)',
+) !default;
+
+// ブレイクポイントの判定設定
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

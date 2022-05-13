@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #ccc;
+}
+
+.outer-container {
+  overflow: hidden;
+}
+.outer-container .container {
+  position: relative;
+  background-color: white;
+  height: calc((400px + 100px) * 6);
+  min-height: 100vh;
+  width: 100%;
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 450px) {
+  .outer-container .container {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .outer-container .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .outer-container .container {
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .outer-container .container {
+    max-width: 1920px;
+  }
+}
+.outer-container .container .broken-grid-box {
+  position: absolute;
+  width: 290px;
+  height: 400px;
+}
+@media screen and (min-width: 450px) {
+  .outer-container .container .broken-grid-box {
+    width: 390px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .outer-container .container .broken-grid-box {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .outer-container .container .broken-grid-box {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .outer-container .container .broken-grid-box {
+    width: 1200px;
+  }
+}
+.outer-container .container .broken-grid-box:nth-child(odd) {
+  left: calc(0px - (100vw - 290px)/2);
+}
+@media screen and (min-width: 450px) {
+  .outer-container .container .broken-grid-box:nth-child(odd) {
+    left: calc(0px - (100vw - 390px)/2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .outer-container .container .broken-grid-box:nth-child(odd) {
+    left: calc(0px - (100vw - 640px)/2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .outer-container .container .broken-grid-box:nth-child(odd) {
+    left: calc(0px - (100vw - 960px)/2);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .outer-container .container .broken-grid-box:nth-child(odd) {
+    left: calc(0px - (100vw - 1200px)/2);
+  }
+}
+.outer-container .container .broken-grid-box:nth-child(even) {
+  right: calc(0px - (100vw - 290px)/2);
+}
+@media screen and (min-width: 450px) {
+  .outer-container .container .broken-grid-box:nth-child(even) {
+    right: calc(0px - (100vw - 390px)/2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .outer-container .container .broken-grid-box:nth-child(even) {
+    right: calc(0px - (100vw - 640px)/2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .outer-container .container .broken-grid-box:nth-child(even) {
+    right: calc(0px - (100vw - 960px)/2);
+  }
+}
+@media screen and (min-width: 1920px) {
+  .outer-container .container .broken-grid-box:nth-child(even) {
+    right: calc(0px - (100vw - 1200px)/2);
+  }
+}
+.outer-container .container .broken-grid-box:nth-of-type(1) {
+  top: 0;
+  background-color: #fcc;
+}
+.outer-container .container .broken-grid-box:nth-of-type(2) {
+  top: calc((400px + 100px) * 1);
+  background-color: #cfc;
+}
+.outer-container .container .broken-grid-box:nth-of-type(3) {
+  top: calc((400px + 100px) * 2);
+  background-color: #ccf;
+}
+.outer-container .container .broken-grid-box:nth-of-type(4) {
+  top: calc((400px + 100px) * 3);
+  background-color: #cff;
+}
+.outer-container .container .broken-grid-box:nth-of-type(5) {
+  top: calc((400px + 100px) * 4);
+  background-color: #fcf;
+}
+.outer-container .container .broken-grid-box:nth-of-type(6) {
+  top: calc((400px + 100px) * 5);
+  background-color: #ffc;
+}
+
+/*# sourceMappingURL=style.css.map */
